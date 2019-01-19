@@ -1,11 +1,14 @@
 html {
   width: 100%;
   height: 100%;
+
 }
 
 body {
   font-family: 'Josefin Sans', sans-serif;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -137,7 +140,6 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45%;
   max-width: 80rem;
   padding: 0 1rem;
 }
@@ -171,12 +173,11 @@ canvas {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  height: 50%;
   max-width: 80rem;
 }
 
 .im1 {
-  width: 45%;
+  width: 62%;
 }
 
 .im2 {
@@ -184,7 +185,7 @@ canvas {
 }
 
 .im3 {
-  width: 45%;
+  width: 62%;
 }
 
 /*------------------------------------*/
