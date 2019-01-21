@@ -153,6 +153,7 @@ canvas {
 .bs2 {
   align-items: center;
   width: 90%;
+  padding: 3rem 1rem;
 }
 
 .bs3 {
@@ -172,8 +173,8 @@ canvas {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  max-width: 80rem;
+  padding: 2rem 0.5rem;
+  max-width: 110rem;
 }
 
 .im1 {
@@ -181,7 +182,7 @@ canvas {
 }
 
 .im2 {
-  width: 100%;
+  max-width: 180rem;
 }
 
 .im3 {
@@ -244,6 +245,12 @@ canvas {
   width: 100%;
   margin: 0.6rem;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #contact input:hover,
@@ -257,15 +264,15 @@ canvas {
 }
 
 #contact button {
-  margin: 0.6rem;
+  margin: 0.5rem;
   cursor: pointer;
   width: 100%;
   border: none;
   color: white;
   background: #555;
   cursor: pointer;
-  padding: 10px;
-  font-size: 15px;
+  padding: 1rem;
+  font-size: 1rem;
   border-radius: 8px;
 }
 
@@ -367,7 +374,7 @@ canvas {
   color: #ff1493;
 }
 
-/*.--------------------------.*/
+/* --------------- CARDS --------------- */
 .card {
   background-color: #fff;
   border-radius: 8px;
@@ -378,30 +385,40 @@ canvas {
   overflow: hidden;
 }
 
+.c2{
+  width: 15%;
+}
+
 .card-media {
   width: 100%;
-  transition: filter 0.3s;
-  filter: grayscale(1);
-}
-
-.card:hover .card-media {
-  filter: grayscale(0);
-}
-
-.card-details {
-  padding: 0 1rem;
 }
 
 .card-head {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
 }
 
+.card-details {
+  padding: 0 1rem;
+  font-weight: 300;
+}
+
+
+
 /* --------------- MEDIA QUERY --------------- */
 @media (max-width: 1365px) {
+
+  .arrow {
+    display: none;
+  }
+
   .s1, .s3 {
     flex-direction: column;
+  }
+
+  .box_section{
+    padding: 3rem 1rem;
   }
 
   .bs1, .bs3 {
@@ -423,14 +440,9 @@ canvas {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .intro {
     width: 30rem;
-  }
-
-  .arrow {
-    width: 2rem;
-    height: 2rem;
   }
 
   .card {
